@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Custom Mouse pad</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+</head>
+<body>
+<center>
+
+<div class="header">
+<br><br><br><br>
+<center><h1 id="custom_text" style="font-size: 100px;">Lorem Ipsum</h1></center>
+</div>
+
+<input type="text" id="myText" placeholder="Type in custom text...">
+<button onclick="myFunction()">Apply Text</button>
+<br><br>
+<button type="button" onclick="myFont1()">Arial</button>
+<br><br>
+<button type="button" onclick="myFont2()">Krona One</button>
+<br><br>
+<button type="button" onclick="myFont3()">Girassol</button>
+<br><br>
+<button type="button" onclick="myColor1()">White</button>&nbsp;<button type="button" onclick="myColor2()">Black</button>&nbsp;<button type="button" onclick="myColor3()">Red</button>&nbsp;<button type="button" onclick="myColor4()">Orange</button>
+<br><br>
+<button type="button" onclick="changeImage1()">1</button>&nbsp;<button type="button" onclick="changeImage2()">2</button>&nbsp;<button type="button" onclick="changeImage3()">3</button>&nbsp;<button type="button" onclick="changeImage4()">4</button>&nbsp;<button type="button" onclick="changeImage5()">5</button>
+<script>
+function myFunction() {
+  var x = document.getElementById("myText").value;
+  document.getElementById("custom_text").innerHTML = x;
+}
+
+function myFont1() {
+ document.getElementById('custom_text').style.fontFamily = 'arial'
+}
+
+function myFont2() {
+ document.getElementById('custom_text').style.fontFamily = 'Krona One, sans-serif'
+}
+
+function myFont3() {
+ document.getElementById('custom_text').style.fontFamily = 'Girassol, cursive'
+}
+
+function myColor1() {
+document.getElementById('custom_text').style.color = 'White'
+}
+
+function myColor2() {
+document.getElementById('custom_text').style.color = 'Black'
+}
+
+function myColor3() {
+document.getElementById('custom_text').style.color = 'Red'
+}
+
+function myColor4() {
+document.getElementById('custom_text').style.color = 'Orange'
+}
+
+function changeImage1(){
+  wavy-black-white.png
+}
+
+function changeImage2(){
+  wawy-red.png
+}
+
+function changeImage3(){
+  wawy-blue.png
+}
+
+function changeImage4(){
+  wavy-purp-blue-white.png
+}
+
+function changeImage5(){
+  wavy-red-yellow.png
+}
+
+</script>
+</center>
+</body>
+<style>
+.header{width: 900px; height: 400px; background-image: url("wavy-red-yellow.png");}
+
+div {
+        border: 1px solid #000;
+        width: 60px;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+</style>
+</html>
